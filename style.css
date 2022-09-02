@@ -3,22 +3,74 @@
 }
 
 body {
-    /* background-image: url(Coderen-Portfolio-background.png); */
-    background-image: url(https://c.tenor.com/zbgBgBc8H1cAAAAC/twerks-man.gif);
+    padding: 0;
+    margin: 0;
+    background-image: url(Coderen-Portfolio-background.png);
+    height: 300vh;
 }
+
+
+.Main {
+    background-image: url(Coderen-Portfolio-background.png);
+    margin:0;
+    padding-top: 100px;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.main-nav {
+    z-index: 1000;
+    height: 500px;
+    width: 100%;
+    top: 0;
+    background-image: url("https://www.codingem.com/wp-content/uploads/2021/10/juanjo-jaramillo-mZnx9429i94-unsplash-scaled.jpg");;
+    transition: all 800ms ease-in-out;
+  }
+  
+.small {
+    height: 300px;
+}
+  
 
 .Introduction {
     text-align: center;
     color: #fff;
+    height: 200% ;
     background: rgba(0, 0, 0, 0.6);
 }
 
-
 .Table-Of-Contents {
-    border: 5px solid red;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    margin-right: 0px;
-    margin-left: 0px;
+    padding: 20px 0px;
+    position: fixed;
+    width: 100%;
     text-align: right;
+    background-color: black;
 }
+
+.TopNav{
+    padding: 25px;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.TopNav:hover{
+    color: purple;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 0.5s ease;
+    animation: smoothScroll 1s forwards;
+  }
+
+  @keyframes smoothScroll {
+    0% {
+      transform: translateY(-142px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
