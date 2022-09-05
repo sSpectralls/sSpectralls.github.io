@@ -83,14 +83,14 @@ body {
 
 .Foto {
   z-index: -1;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4e/Macaca_nigra_self-portrait_large.jpg");
+  background-image: url("https://c.tenor.com/09WlS4upKgkAAAAM/irtfou-shrek.gif");
   background-size: cover;
   position: absolute;
   width: 30%;
   height: 70%;
   border: solid purple 5px;
   box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
-  right: 10%;
+  right: 15%;
   padding: 1%;
   -webkit-animation: slideInRight 3s forwards;
   -moz-animation: slideInRight 3s forwards;
