@@ -60,23 +60,24 @@ body {
 
 
 .FirstPanel { 
+  z-index: -1;
   background-color: grey;
   position: absolute;
-  width: 20%;
+  width: 25%;
   color: white;
   border: solid purple 5px;
   box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
   left: 10%;
   padding: 1%;
-  -webkit-animation: slideIn 2s forwards;
-  -moz-animation: slideIn 2s forwards;
-  animation: slideIn 2s forwards;
+  -webkit-animation: slideIn 3s forwards;
+  -moz-animation: slideIn 3s forwards;
+  animation: slideIn 3s forwards;
 }
 
 
-
-
-
+#questions-FirstPanel {
+  line-height: 200%;
+}
 
 
 
