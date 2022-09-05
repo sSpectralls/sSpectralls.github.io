@@ -8,6 +8,8 @@ body {
     background-image: url(Coderen-Portfolio-background.png);
     background-size: 100%;
     height: 300vh;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -67,11 +69,11 @@ body {
   color: white;
   border: solid purple 5px;
   box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
-  left: 10%;
+  left: 15%;
   padding: 1%;
-  -webkit-animation: slideIn 3s forwards;
-  -moz-animation: slideIn 3s forwards;
-  animation: slideIn 3s forwards;
+  -webkit-animation: slideInLeft 3s forwards;
+  -moz-animation: slideInLeft 3s forwards;
+  animation: slideInLeft 3s forwards;
 }
 
 
@@ -79,9 +81,32 @@ body {
   line-height: 200%;
 }
 
+.Foto {
+  z-index: -1;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4e/Macaca_nigra_self-portrait_large.jpg");
+  background-size: cover;
+  position: absolute;
+  width: 30%;
+  height: 70%;
+  border: solid purple 5px;
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+  right: 10%;
+  padding: 1%;
+  -webkit-animation: slideInRight 3s forwards;
+  -moz-animation: slideInRight 3s forwards;
+  animation: slideInRight 3s forwards;
+}
 
 
-@-webkit-keyframes slideIn {
+
+
+
+
+
+
+
+
+@-webkit-keyframes slideInLeft {
   0% {
     transform: translateX(-900px);
   }
@@ -89,7 +114,7 @@ body {
     transform: translateX(0);
   }
 }
-@-moz-keyframes slideIn {
+@-moz-keyframes slideInLeft {
   0% {
     transform: translateX(-900px);
   }
@@ -97,7 +122,7 @@ body {
     transform: translateX(0);
   }
 }
-@keyframes slideIn {
+@keyframes slideInLeft {
   0% {
     transform: translateX(-900px);
   }
@@ -106,7 +131,30 @@ body {
   }
 }
 
-
+@-webkit-keyframes slideInRight {
+  0% {
+    transform: translateX(900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes slideInRight {
+  0% {
+    transform: translateX(900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    transform: translateX(900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
 
 
