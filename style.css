@@ -1,60 +1,58 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    background-image: url(Coderen-Portfolio-background.png);
-    background-size: 100%;
-    height: 300vh;
-    max-width: 100%;
-    overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  background-image: url(Coderen-Portfolio-background.png);
+  background-size: 100%;
+  overflow-x: hidden;
 }
 
 
 .Main {
-    margin:0;
-    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+  margin:0;
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
 }
+
 
 .main-nav {
-    z-index: 10;
-    width: 100%;
-    height: 25%;
-    top: 0;
-    background-image: url("https://www.codingem.com/wp-content/uploads/2021/10/juanjo-jaramillo-mZnx9429i94-unsplash-scaled.jpg");
-    background-size: 100%;
-    transition: all 800ms ease-in-out;
+  background-image: url("https://www.codingem.com/wp-content/uploads/2021/10/juanjo-jaramillo-mZnx9429i94-unsplash-scaled.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+  z-index: 2;
+  color: white;
 }
-
-
-.small {
-    height: 300px;
-}
-  
 
 .Introduction {
-    text-align: center;
-    color: #fff;
-    height: 100% ;
-    padding: 20px 50px 50px 50px;
-    background: rgba(0, 0, 0, 0.9);
+  position: relative;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  padding: 20px 50px 50px 50px;
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .Table-Of-Contents {
-    padding: 20px 0px;
-    position: fixed;
-    width: 100%;
-    text-align: right;
-    background-color: black;
+  z-index: 4;
+  top: 0;
+  padding: 20px 0px;
+  position: fixed;
+  width: 100%;
+  text-align: right;
+  background-color: black;
 }
 
 .TopNav{
-    padding: 25px;
-    font-size: 15px;
-    text-decoration: none;
-    color: white;
+  padding: 25px;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
 }
 
 .TopNav_Active {
@@ -69,17 +67,21 @@ body {
     color: purple;
 }
 
+.Panels{
+  width: 100%;
+  display: flex;
+  justify-content: space-around
+}
 
 .FirstPanel { 
-  z-index: -1;
   background-color: grey;
-  position: absolute;
-  width: 25%;
+  max-width: 25%;
   color: white;
   border: solid purple 5px;
-  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
-  left: 15%;
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8); 
   padding: 1%;
+
+
   -webkit-animation: slideInLeft 3s forwards;
   -moz-animation: slideInLeft 3s forwards;
   animation: slideInLeft 3s forwards;
@@ -92,14 +94,11 @@ body {
 }
 
 .Contact {
-  z-index: -1;
   background-color: grey;
-  position: absolute;
   width: 30%;
   color: white;
   border: solid purple 5px;
   box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
-  right: 10%;
   padding: 1%;
   -webkit-animation: slideInRight 3s forwards;
   -moz-animation: slideInRight 3s forwards;
@@ -107,26 +106,6 @@ body {
   animation-delay: 1s;
   line-height: 170%;
 }
-
-.NextButton {
-  position: relative;
-  z-index: -1; 
-  width: 20vh;
-  height: 20vh;
-  transform: translate(0%, 200%);
-  margin: 0 auto;
-  background: grey no-repeat;
-  border: solid pink 3px;
-  border-radius: 50%;
-}
-
-#NextButton-Arrow{
-  z-index: -2;
-  width: 19vh;
-  height: 19vh;
-  transform: rotate(-90deg);
-}
-
 
 
 
