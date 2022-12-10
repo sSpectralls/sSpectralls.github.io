@@ -23,7 +23,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 95vh;
   position: relative;
   z-index: 2;
   color: white;
@@ -35,7 +35,7 @@ body {
   color: #fff;
   width: 100%;
   padding: 20px 50px 50px 50px;
-  background: rgba(0, 0, 0, 0.9);
+  background: black;
 }
 
 .Table-Of-Contents {
@@ -70,28 +70,10 @@ body {
 .Panels{
   width: 100%;
   display: flex;
-  justify-content: space-around
-}
-
-.FirstPanel { 
-  background-color: grey;
-  max-width: 25%;
-  color: white;
-  border: solid purple 5px;
-  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8); 
-  padding: 1%;
-
-
-  -webkit-animation: slideInLeft 3s forwards;
-  -moz-animation: slideInLeft 3s forwards;
-  animation: slideInLeft 3s forwards;
-  animation-delay: 1s;
+  justify-content: space-evenly;
 }
 
 
-#LineHeight {
-  line-height: 200%;
-}
 
 .Contact {
   background-color: grey;
@@ -107,59 +89,82 @@ body {
   line-height: 170%;
 }
 
-
-
-
-
-@-webkit-keyframes slideInLeft {
-  0% {
-    transform: translateX(-900px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+.Purple-Wave {
+  height: 40vh;
+  background-image: url(Purple-Wave.png);
+  background-size: cover;
+  background-position: center top;
+  width: 100%;
+  background-repeat: no-repeat;
+  margin-top: -1vh;
 }
-@-moz-keyframes slideInLeft {
-  0% {
-    transform: translateX(-900px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes slideInLeft {
-  0% {
-    transform: translateX(-900px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+.PanelsBG {
+  background-size: cover;
+  background-position: center top;
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 80vh;
+  background-color: #222222;
+  margin-top: -1vh;
 }
 
-@-webkit-keyframes slideInRight {
-  0% {
-    transform: translateX(900px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+.Panels-Text {
+  color: white;
+  position: absolute;
+  left: 8%;
+  width: 30%;
+  line-height: 170%;
 }
-@-moz-keyframes slideInRight {
-  0% {
-    transform: translateX(900px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+
+.PanelsImage {
+  background-image: url(Laptop.png);
+  width: 100%;
+  Height: 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 400px 400px;
+  position: absolute;
+  left: 700px;
+  box-shadow: 100px;
 }
-@keyframes slideInRight {
-  0% {
-    transform: translateX(900px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+
+.EditLater {
+  color: red;
+}
+
+.AboutBG {
+  background-color: purple;
+  padding-bottom: 20vh;
+}
+
+.About{
+  display: flex;
+  height: 80vh;
+  justify-content: space-evenly;
+}
+
+.About-Text{
+  width: 50%;
+  font-size: 20px;
+  color: white;
+
+
+  line-height: 170%;
+}
+
+.ImageHolder {
+  width: 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 400px 400px;
+  background-image: url(Cartoonify.svg);
 }
 
 
+
+H1 {
+  font-size: 32px;
+  line-height: 37px;
+  margin-bottom: 15px;
+}
 
