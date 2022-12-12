@@ -25,33 +25,26 @@ video {
   top: 0;
   left: 0;
 }
-.main-nav {
-  background-image: url("https://www.codingem.com/wp-content/uploads/2021/10/juanjo-jaramillo-mZnx9429i94-unsplash-scaled.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-  z-index: 2;
-  color: white;
-}
 
-.Introduction {
-  position: relative;
-  text-align: center;
-  color: #fff;
-  width: 100%;
-  padding: 20px 50px 50px 50px;
-  background: black;
-}
 
-.Table-Of-Contents {
+#Navbar {
   z-index: 4;
   top: 0;
   padding: 20px 0px;
   position: fixed;
   width: 100%;
   text-align: right;
+  background-color: transparent;
+}
+
+#Navbar.scrollToBottom {
+  z-index: 4;
+  top: 0;
+  padding: 20px 0px;
+  position: fixed;
+  width: 100%;
+  text-align: right;
+  background-color: transparent;
   background-color: black;
 }
 
@@ -163,7 +156,7 @@ video {
 .About-Text{
   width: 50%;
   font-size: 20px;
-  color: white;
+  color: black;
 
 
   line-height: 170%;
