@@ -3,11 +3,9 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
+html, body {
   padding: 0;
   margin: 0;
-  background-image: url(Coderen-Portfolio-background.png);
-  background-size: 100%;
   overflow-x: hidden;
 }
 
@@ -118,14 +116,13 @@ body {
 
 .PanelsImage {
   background-image: url(Laptop.png);
-  width: 100%;
   Height: 80%;
+  width: 500px;
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 400px 400px;
   position: absolute;
-  left: 700px;
-  box-shadow: 100px;
+  right: 0px;
 }
 
 .EditLater {
