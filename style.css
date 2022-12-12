@@ -7,6 +7,8 @@ html, body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  background-color: #F73D93;
+  position: relative;
 }
 
 
@@ -16,12 +18,19 @@ html, body {
 }
 
 
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
 .main-nav {
   background-image: url("https://www.codingem.com/wp-content/uploads/2021/10/juanjo-jaramillo-mZnx9429i94-unsplash-scaled.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 95vh;
+  height: 100vh;
   position: relative;
   z-index: 2;
   color: white;
@@ -56,13 +65,13 @@ html, body {
 .TopNav_Active {
   padding: 25px;
   font-size: 15px;
-  text-decoration: underline solid purple 3px;
+  text-decoration: underline solid #F73D93 3px;
   color: white;
   pointer-events: none;
 }
 
 .TopNav:hover{
-    color: purple;
+    color: #F73D93;
 }
 
 .Panels{
@@ -77,7 +86,7 @@ html, body {
   background-color: grey;
   width: 30%;
   color: white;
-  border: solid purple 5px;
+  border: solid #F73D93 5px;
   box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
   padding: 1%;
   -webkit-animation: slideInRight 3s forwards;
@@ -87,26 +96,40 @@ html, body {
   line-height: 170%;
 }
 
-.Purple-Wave {
-  height: 40vh;
-  background-image: url(Purple-Wave.png);
-  background-size: cover;
-  background-position: center top;
+.BlackTriangle {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  background-repeat: no-repeat;
-  margin-top: -1vh;
+  height: 0;
+  border-style: solid;
+  border-width: 150vh 0 0 200vh;
+  border-color: transparent transparent transparent #000000;
 }
-.PanelsBG {
+
+.GreyTriangle {
+  position: absolute;
+  left: 30px;
+  bottom: 5px;
+  width: 100%;
+  height: 0;
+  border-style: solid;
+  border-width: 150vh 0 0 200vh;
+  border-color: transparent transparent transparent #4a4a4a;
+}
+
+ .PanelsBG {
   background-size: cover;
   background-position: center top;
   width: 100%;
   background-repeat: no-repeat;
   height: 80vh;
-  background-color: #222222;
   margin-top: -1vh;
 }
 
 .Panels-Text {
+  z-index: 2;
   color: white;
   position: absolute;
   left: 8%;
@@ -129,15 +152,12 @@ html, body {
   color: red;
 }
 
-.AboutBG {
-  background-color: purple;
-  padding-bottom: 20vh;
-}
 
 .About{
   display: flex;
-  height: 80vh;
+  height: 200vh;
   justify-content: space-evenly;
+  padding-bottom: 20vh;
 }
 
 .About-Text{
